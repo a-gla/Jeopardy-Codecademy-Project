@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 import re
 pd.set_option('display.max_colwidth', None)
-jeopardy = pd.read_csv(r'C:\Users\glady\Downloads\This is Jeopardy\jeopardy.csv')
+jeopardy = pd.read_csv('jeopardy.csv')
 # print(jeopardy)
 
 jeopardy.rename(columns={'Show Number': 'show_number', ' Air Date': 'air_date', ' Round': 'round', ' Category': 'category', ' Value': 'value', ' Question': 'question', ' Answer': 'answer'}, inplace=True)
